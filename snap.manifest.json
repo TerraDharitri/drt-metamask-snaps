@@ -1,0 +1,43 @@
+{
+  "version": "0.0.2",
+  "description": "Snap connector to DharitrI chain.",
+  "proposedName": "DharitrI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TerraDharitri/drt-metamask-snaps.git"
+  },
+  "source": {
+    "shasum": "M6Pdi+EU9RTSvx7xLy/PfmiLY0gJORBvwDfldSARpkI=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/icon.svg",
+        "packageName": "@terradharitri/metamask-snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "endowment:network-access": {},
+    "snap_dialog": {},
+    "endowment:rpc": {
+      "dapps": true,
+      "snaps": false
+    },
+    "snap_getBip32Entropy": [
+      {
+        "description": "This permissions allows DharitrI to manage accounts and assets across the ecosystem by deriving key pairs from secret recovery phrase. It allows signing messages and transactions, your secrets are safe and not revealed.",
+        "path": [
+          "m",
+          "44'",
+          "508'",
+          "0'",
+          "0'",
+          "0'"
+        ],
+        "curve": "ed25519"
+      }
+    ]
+  },
+  "manifestVersion": "0.1"
+}
