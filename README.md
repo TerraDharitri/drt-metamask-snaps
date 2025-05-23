@@ -1,1 +1,1 @@
-# drt-js-sdk-metamask-snap
+# drt-metamask-snaps
